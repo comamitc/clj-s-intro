@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>clj(s) intro</title>
+        <title>reveal-md</title>
         <link rel="stylesheet" href="css/reveal.css">
         <link rel="stylesheet" href="css/theme/white.css" id="theme">
         <!-- For syntax highlighting -->
@@ -111,7 +111,7 @@ user=> #{:bar 3.14 "hello"}
 
 ```clojure
 ; function
-user=> (defn foo [& args] (apply str " " args))
+user=> (defn foo [& args] (apply str args))
 #'user/foo
 
 ; symbol
@@ -120,7 +120,7 @@ user=> foo
 
 ; list (represents a "call")
 user=> (foo :bar 3.14)
-":bar 3.14"
+":bar3.14"
 ```
 </script></section><section  data-markdown><script type="text/template">
 ## `list` and evaluation
@@ -514,7 +514,8 @@ _Let's get wild!_
             options = extend(defaultOptions, options, queryOptions);
             Reveal.initialize(options);
         </script>
-
+        
           <script src="/scripts/clj-s"></script>
     </body>
 </html>
+

@@ -109,7 +109,7 @@ user=> #{:bar 3.14 "hello"}
 
 ```clojure
 ; function
-user=> (defn foo [& args] (apply str " " args))
+user=> (defn foo [& args] (apply str args))
 #'user/foo
 
 ; symbol
@@ -118,7 +118,7 @@ user=> foo
 
 ; list (represents a "call")
 user=> (foo :bar 3.14)
-":bar 3.14"
+":bar3.14"
 ```
 
 ---
