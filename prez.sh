@@ -1,1 +1,1 @@
-reveal-md presentation.md --theme white --highlightTheme github --static
+reveal-md docs/presentation.md --theme white --highlightTheme github
