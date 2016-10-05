@@ -5,7 +5,7 @@
 </style>
 
 ## CLJ(S) Intro
-<img src="./Clojure-Logo.png" width="250">
+<img src="./clojure.png" width="250">
 > Mitch Comardo, 2016
 
 ---
