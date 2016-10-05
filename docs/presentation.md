@@ -5,7 +5,7 @@
 </style>
 
 ## CLJ(S) Intro
-
+<img src="./Clojure-Logo.png" width="250">
 > Mitch Comardo, 2016
 
 ---
@@ -31,13 +31,13 @@
 - ClojureScript - dialect of Clojure that targets JS
 - Google Closure Compiler - used in the CLJS compilation process
 - [Google Closure Library](https://google.github.io/closure-library/api/)
-- Leiningen - The build tool standard (but it has alternatives!)
+- Leiningen - JVM runtime build tool standard
 
 ---
 
 ## About Clojure(Script)
 
-### Clojure has Great Defaults
+> **_Clojure has Great Defaults_**
 
 - Clojure has a focus on simplicity
 - Functional programs are easier to reason about; result in fewer lines of code
@@ -276,6 +276,7 @@ m   ; ⇒ is still {:a 1 :b 2}
 
 ```clojure
 ; create a named function using the defn macro
+; demostrates function arity
 (defn greet
   "Takes a name returns a personalized (or generic) greeting!"
   ([] (greet "World"))
@@ -300,7 +301,7 @@ user/greet
 nil
 
 user=> (source greet)
-defn greet
+(defn greet
   "Takes a name returns a personalized (or generic) greeting!"
   ([] (greet "World"))
   ([username]
@@ -354,6 +355,7 @@ There's so much more!
 - `defmethod` & `defmulti`
 - `defprotocol` & `defrecord`
 - Threading Macros `(-> ...)`
+- Conditional `let`
 
 Check out
 - http://clojure.org/api/cheatsheet
@@ -460,7 +462,7 @@ _Let's get wild!_
 ```
 
 ```clojure
-; Unused Variables - like sql query params
+; Unused Variables in strict function signatures
 (fn [db query _] (db/query query))
 ```
 
