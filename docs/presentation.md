@@ -435,7 +435,7 @@ _Let's get wild!_
 (def js-object #js {:a 1 :b 2})
 ; JS output ⇒ {"b": 2, "a": 1};
 
-(def cljs-object (js-clj #js {"b": 2, "a": 1} :keywordize-keys true))
+(def cljs-object (js->clj #js {"b": 2, "a": 1} :keywordize-keys true))
 ; CLJS output ⇒ {:b 2 :a 1}
 ```
 
